@@ -196,7 +196,7 @@ docker compose exec app python file_manipulator.py duplicate-contents input.txt 
 
 #####  文字列置換して上書き
 ```bash
-docker compose exec app python file_manipulator.py replace-string input.txt _dummy "old" "new"
+docker compose exec app python file_manipulator.py replace-string input.txt _dummy "こんにちは！" "こんばんは！"
 ```
 | コマンド     | 内容                                                        |
 | ------------ | ----------------------------------------------------------- |
