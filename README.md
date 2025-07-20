@@ -166,8 +166,8 @@ docker compose exec app python file_manipulator.py reverse input.txt output_reve
 ```
 | コマンド              | 内容                                                        |
 | --------------------- | ----------------------------------------------------------- |
-| `input.txt`           | 処理対象のファイルのパス（ディレクトリ＋ファイル名）        |
-| `output_reverse.txt`  | 逆順にした内容を書き込むファイルのパス（ディレクトリ＋ファイル名） |
+| `input.txt`           | 処理対象のファイルのパス        |
+| `output_reverse.txt`  | 逆順にした内容を書き込むファイルのパス|
 
 <br>
 
@@ -177,18 +177,18 @@ docker compose exec app python file_manipulator.py copy input.txt output_copy.tx
 ```
 | コマンド             | 内容                                                        |
 | -------------------- | ----------------------------------------------------------- |
-| `input.txt`          | コピー元のファイルのパス（ディレクトリ＋ファイル名）        |
-| `output_copy.txt`    | コピー先のファイルのパス（ディレクトリ＋ファイル名）        |
+| `input.txt`          | コピー元のファイルのパス       |
+| `output_copy.txt`    | コピー先のファイルのパス        |
 
 <br>
 
 #####  内容を3回複製して上書き
 ```bash
-docker compose exec app python file_manipulator.py duplicate-contents input.txt _dummy 3
+docker compose exec app python file_manipulator.py duplicate-contents input.txt dummy 3
 ```
 | コマンド     | 内容                                                        |
 | ------------ | ----------------------------------------------------------- |
-| `input.txt`  | 複製対象のファイルのパス（ディレクトリ＋ファイル名）        |
+| `input.txt`  | 複製対象のファイルのパス        |
 | `dummy`     | 出力パスは使用しないためダミーを指定                        |
 | `3`          | ファイルの内容を複製する回数                                |
 
