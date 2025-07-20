@@ -189,14 +189,14 @@ docker compose exec app python file_manipulator.py duplicate-contents input.txt 
 | コマンド     | 内容                                                        |
 | ------------ | ----------------------------------------------------------- |
 | `input.txt`  | 複製対象のファイルのパス（ディレクトリ＋ファイル名）        |
-| `_dummy`     | 出力パスは使用しないためダミーを指定                        |
+| `dummy`     | 出力パスは使用しないためダミーを指定                        |
 | `3`          | ファイルの内容を複製する回数                                |
 
 <br>
 
 #####  文字列置換して上書き
 ```bash
-docker compose exec app python file_manipulator.py replace-string input.txt _dummy "こんにちは！" "こんばんは！"
+docker compose exec app python file_manipulator.py replace-string input.txt dummy "こんにちは！" "こんばんは！"
 ```
 | コマンド     | 内容                                                        |
 | ------------ | ----------------------------------------------------------- |
